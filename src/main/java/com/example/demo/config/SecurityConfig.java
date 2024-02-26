@@ -38,8 +38,10 @@ public class SecurityConfig {
 	@SuppressWarnings("removal")
 	public SecurityFilterChain securityFilterChain(HttpSecurity secure) throws Exception
 	{
-		secure.csrf().disable().authorizeHttpRequests().requestMatchers("/user/name").permitAll()
-		.anyRequest().authenticated().and().formLogin();
+		secure.csrf().disable().authorizeHttpRequests().requestMatchers("/user/name").hasAuthority("admin").
+		anyRequest().permitAll()
+		.and().formLogin();
+		//requestMatchers("/user/getname").authenticated();
 		 return secure.build();
 	}
 }

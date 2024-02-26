@@ -16,7 +16,7 @@ public class Entity {
 	
 	private String role;
 	
-	private String email;
+    private String email;
 	
 	private String password;
 
@@ -35,10 +35,6 @@ public class Entity {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	
-
-	
 
 	public int getId() {
 		return id;

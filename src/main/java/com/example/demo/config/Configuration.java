@@ -31,7 +31,10 @@ public class Configuration implements UserDetails {
 	@Override
 	public String getPassword() {
 		// TODO Auto-generated method stub
+		//System.out.print(entity.getPassword());
 		return entity.getPassword();
+		
+		
 	}
 
 	@Override
@@ -61,7 +64,7 @@ public class Configuration implements UserDetails {
 	@Override
 	public boolean isEnabled() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 }

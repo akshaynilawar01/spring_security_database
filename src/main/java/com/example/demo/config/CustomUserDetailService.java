@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import com.example.demo.entity.Entity;
 import com.example.demo.repository.UserRepo;
+
 @Component
 public class CustomUserDetailService implements UserDetailsService{
  
